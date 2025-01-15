@@ -3,8 +3,8 @@
     --primary-color: #0066ff;
     --text-primary: #070000;
     --transition-speed: 0.3s;
-    
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: transparent;
     padding: 0.5rem 0;
     position: fixed;
     width: 100%;
@@ -21,7 +21,7 @@
   }
   
   .navContainer {
-    max-width: 1200px;
+    max-width: 12000px;
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
