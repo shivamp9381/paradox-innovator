@@ -1,0 +1,106 @@
+/* General container styles */
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+  overflow: hidden;
+}
+
+/* Content section */
+.content {
+  flex: 1;
+  text-align: left;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 1.2s ease-out forwards;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1.2s ease-out forwards;
+}
+
+/* Image styles */
+.aboutImage {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imageZoom:hover {
+  transform: scale(1.1);
+}
+
+/* Text styles */
+.subHeading {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #7f8c8d;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Button styles */
+.readMoreButton {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.scaleOnHover:hover {
+  transform: scale(1.1);
+  background-color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

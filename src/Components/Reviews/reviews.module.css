@@ -1,0 +1,102 @@
+/* General container styles */
+.reviewsContainer {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+    overflow: hidden;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+  }
+  
+  /* Carousel styles */
+  .carousel {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    position: relative;
+    perspective: 1200px;
+  }
+  
+  /* Review Card */
+  .reviewCard {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 280px;
+    transform: rotateY(0deg) translateZ(0);
+    animation: cardBounce 1.5s ease infinite;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .reviewCard:hover {
+    transform: translateY(-10px) rotateY(5deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Text styles */
+  .text {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  .name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  /* Creative Animations */
+  @keyframes cardBounce {
+    0%, 100% {
+      transform: translateY(0) rotateY(0);
+    }
+    50% {
+      transform: translateY(-5px) rotateY(5deg);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animationDelay0 {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .animationDelay1 {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .animationDelay2 {
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .animationDelay3 {
+    animation: fadeIn 1.4s ease-in-out;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .carousel {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

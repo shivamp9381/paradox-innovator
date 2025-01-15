@@ -1,0 +1,160 @@
+/* General styles */
+.servicesContainer {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 1s ease;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px) scale(1.05);
+  }
+  
+  .slideInDelay0 {
+    animation: slideInFromLeft 0.8s ease-out;
+  }
+  
+  .slideInDelay1 {
+    animation: slideInFromRight 0.8s ease-out 0.2s;
+  }
+  
+  .slideInDelay2 {
+    animation: slideInFromLeft 0.8s ease-out 0.4s;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/*   -----------------------------------       */
+
+.servicesContainer {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #f0f8ff, #e6f7ff);
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .subHeading {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #34495e;
+  }
+  
+  /* Cards styles */
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1abc9c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cardDescription {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  /* Button styles */
+  .exploreButton {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    color: white;
+    background: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .exploreButton:hover {
+    background: #2980b9;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .animateDelay0 {
+    animation-delay: 0s;
+  }
+  
+  .animateDelay1 {
+    animation-delay: 0.2s;
+  }
+  
+  .animateDelay2 {
+    animation-delay: 0.4s;
+  }
+  
+  .animateDelay3 {
+    animation-delay: 0.6s;
+  }
+  
+  .animateDelay4 {
+    animation-delay: 0.8s;
+  }
+  
