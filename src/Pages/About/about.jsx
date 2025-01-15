@@ -39,48 +39,48 @@ const About = () => {
   ];
 
   return (
-    <div> 
-        <Navbar />
-    <div className={styles.container}>
-      {/* Hero Section */}
-      <section className={styles.hero}>
-        <h1 className={styles.title}>Our Team</h1>
-        <p className={styles.mainText}>
-          We have a diverse team of passionate individuals who specialize in
-          robotics, engineering, and design. Together, we strive to make a
-          difference through our projects.
-        </p>
-        <p className={styles.secondaryText}>
-          We are Paradox Innovator, a team of 5 innovators that aim to build
-          the future. Paradox Innovator focuses on different innovative
-          projects or ideas to compete in the same or different competitions
-          and life-changing innovations.
-        </p>
-      </section>
+    <div>
+      <Navbar />
+      <div className={styles.container}>
+        {/* Hero Section */}
+        <section className={styles.hero}>
+          <h1 className={styles.title}>Our Team</h1>
+          <p className={styles.mainText}>
+            We have a diverse team of passionate individuals who specialize in
+            robotics, engineering, and design. Together, we strive to make a
+            difference through our projects.
+          </p>
+          <p className={styles.secondaryText}>
+            We are Paradox Innovator, a team of 5 innovators that aim to build
+            the future. Paradox Innovator focuses on different innovative
+            projects or ideas to compete in the same or different competitions
+            and life-changing innovations.
+          </p>
+        </section>
 
-      {/* Team Section */}
-      <section className={styles.team}>
-        <h2 className={styles.teamHeading}>Meet the Innovators</h2>
-        <div className={styles.teamGrid}>
-          {teamMembers.map((member, index) => (
-            <div key={index} className={styles.memberCard}>
-              <img src={member.image} alt={member.name} className={styles.memberImage} />
-              <div className={styles.memberContent}>
-                <h3 className={styles.memberName}>{member.name}</h3>
-                <p className={styles.memberRole}>{member.role}</p>
+        {/* Team Section */}
+        <section className={styles.team}>
+          <h2 className={styles.teamHeading}>Meet the Innovators</h2>
+          <div className={styles.teamGrid}>
+            {teamMembers.map((member, index) => (
+              <div key={index} className={styles.memberCard}>
+                <img src={member.image} alt={member.name} className={styles.memberImage} />
+                <div className={styles.memberContent}>
+                  <h3 className={styles.memberName}>{member.name}</h3>
+                  <p className={styles.memberRole}>{member.role}</p>
+                </div>
+                <div className={styles.hoverOverlay}>
+                  <a href={member.profileLink} className={styles.profileLink}>
+                    View Profile
+                  </a>
+                </div>
               </div>
-              <div className={styles.hoverOverlay}>
-                <a href={member.profileLink} className={styles.profileLink}>
-                  View Profile
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    </div>
-    <Achievements />
-    <Footer />
+            ))}
+          </div>
+        </section>
+      </div>
+      <Achievements />
+      <Footer />
     </div>
   );
 };

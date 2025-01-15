@@ -1,4 +1,3 @@
-/* General styles */
 .container {
     margin-top: 5rem;
     font-family: "Arial", sans-serif;
@@ -11,29 +10,28 @@
   .hero {
     text-align: center;
     margin-bottom: 50px;
-    padding: 20px;
+    padding: 60px 20px;
+    background-image: url("https://i.ibb.co/zJgYttS/banner-5255420-640.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
   }
   
   .title {
-    font-size: 3rem;
-    color: #0d6efd;
+    font-size: 3.5rem;
+    font-weight: bold;
     animation: fadeIn 2s ease;
   }
   
-  .mainText {
+  .mainText,
+  .secondaryText {
     font-size: 1.2rem;
     margin-top: 10px;
-    color: #555;
-    animation: slideIn 2s ease;
     line-height: 1.6;
-  }
-  
-  .secondaryText {
-    font-size: 1rem;
-    margin-top: 15px;
-    color: #666;
     animation: slideIn 2.5s ease;
-    line-height: 1.6;
   }
   
   /* Team Section */
@@ -43,7 +41,7 @@
   
   .teamHeading {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 30px;
     color: #333;
     animation: zoomIn 1.5s ease;

@@ -5,23 +5,35 @@
     background-color: #f4f4f9;
   }
   
+  /* Hero Section with Banner Image */
   .header {
+    text-align: center;
     margin-bottom: 50px;
-    animation: fadeIn 1s ease-out;
+    padding: 60px 20px;
+    background-image: url('https://i.ibb.co/zJgYttS/banner-5255420-640.webp'); /* Banner Image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
   }
   
   .title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
-    color: #4b4b4b;
+    animation: fadeIn 2s ease;
   }
   
   .subtitle {
     font-size: 1.2rem;
     color: #7a7a7a;
     margin-top: 10px;
+    line-height: 1.6;
+    animation: slideIn 2.5s ease;
   }
   
+  /* Services Grid */
   .servicesGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -95,6 +107,7 @@
     line-height: 1.5;
   }
   
+  /* Animations */
   @keyframes fadeIn {
     0% {
       opacity: 0;
