@@ -33,7 +33,7 @@ const Footer = () => {
         <div className={styles.brandSection}>
           <div className={styles.logoContainer}>
             <img
-              src="https://i.ibb.co/GpzCLLJ/building-future-20250113-090132-0000.png"
+              src="https://i.ibb.co/x3x4byM/logo-removebg-preview.png"
               alt="Paradox Innovator"
               className={styles.logo}
             />
@@ -56,6 +56,10 @@ const Footer = () => {
                 </li>                
                 <li >
                   <a href="/services" className={styles.link}>Services
+                  </a>
+                </li>
+                <li >
+                  <a href="/careers" className={styles.link}>Careers
                   </a>
                 </li>
                 <li >
@@ -137,16 +141,25 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        
+      </div>
+      <div className={styles.bottomBar}>
+        <p className={styles.copyright}>
+            © {currentYear} Paradox Innovator. All rights reserved.
+            <br />
+            <a className={styles.privacy} href="/privacy">Privacy Policy</a>
+        </p>
       </div>
 
+
       {/* Bottom Bar */}
-      <div className={styles.bottomBar}>
+      {/* <div className={styles.bottomBar}>
         <div className={styles.bottomContent}>
           <p className={styles.copyright}>
             © {currentYear} Paradox Innovator. All rights reserved.
           </p>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };

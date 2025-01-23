@@ -1,11 +1,11 @@
 .footer {
     --footer-bg: #f8f9fa;
-    --footer-text: #2d3748;
+    --footer-text: #9f9fa5;
     --footer-link: #4a5568;
     --footer-link-hover: #0066ff;
     --footer-border: #e2e8f0;
     --bottom-bar-bg: #ffffff;
-    
+    background-image: url("https://i.ibb.co/D9K9gLx/Whats-App-Image-2025-01-23-at-10-15-49.jpg");
     background-color: var(--footer-bg);
     color: var(--footer-text);
     padding-top: 4rem;
@@ -31,7 +31,7 @@
   }
   
   .logo {
-    height: 40px;
+    height: 9rem;
     width: auto;
     object-fit: contain;
   }
@@ -82,9 +82,13 @@
   .linkList li {
     margin-bottom: 0.8rem;
   }
-  
+  .privacy
+  {
+    padding-left: 6rem;
+    color:#bfcfe2;
+  }
   .link {
-    color: var(--footer-link);
+    color:#8e9297;
     text-decoration: none;
     font-size: 0.95rem;
     transition: all 0.3s ease;
@@ -118,7 +122,7 @@
   }
   
   .socialLink {
-    color: var(--footer-link);
+    color:#8e9297;
     text-decoration: none;
     font-size: 0.95rem;
     display: flex;
@@ -141,23 +145,11 @@
   .bottomBar {
     margin-top: 4rem;
     padding: 1.5rem 0;
-    background-color: var(--bottom-bar-bg);
-    border-top: 1px solid var(--footer-border);
-  }
-  
-  .bottomContent {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    justify-items: center;
   }
   
   .copyright {
-    color: var(--footer-link);
+    color:#8e9297;
     font-size: 0.9rem;
     margin: 0;
   }

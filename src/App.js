@@ -9,6 +9,7 @@ import Ankit from './Pages/ankit';
 import Swayam from './Pages/swayam';
 import Ranjan from './Pages/ranjan';
 import Shreya from './Pages/shreya';
+import PrivacyPolicy from './Pages/privacy';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
           <Route path="/swayam" element={<Swayam />} />
           <Route path="/ranjan" element={<Ranjan />} />
           <Route path="/shreya" element={<Shreya />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          {/* <Route path="/privacy" element={<Privacy />} /> */}
         </Routes>
       </div>
     </Router>
