@@ -13,7 +13,24 @@ const reviews = [
     {
       text: "A user-friendly interface that makes monitoring easy.",
       author: "Ravi Kumar"
-    }
+    },
+    {
+      text: 
+      "The automation features have saved us so much time and effort!",
+      author: "Neha Verma"
+    },
+    {
+      text: 
+      "Seamless integration and top-notch performance. Highly recommend!",
+      author: "Aman Gupta"
+    },
+    {
+      text: 
+      "An innovative solution that truly understands modern needs.",
+      author: "Shruti Patel"
+    },
+
+
   ];
 
 const Reviews = () => {

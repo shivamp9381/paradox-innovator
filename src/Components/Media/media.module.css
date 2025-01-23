@@ -2,89 +2,115 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #cadae4;
+    color: #38383a;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-}
-
-.navButton {
-    background-color: #fff;
-    border: 2px solid #ccc;
+    perspective: 1000px;
+    text-align: center;
+  }
+  
+  .carouselHeading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #676f7a;
+  }
+  
+  .logoTrack {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .logoContainer {
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .mediaImage {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .mediaName {
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #676f7a;
+  }
+  
+  .navButtons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .navButton {
+    background-color: transparent;
+    border: 2px solid #fff;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
+    color: #fff;
     cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.navButton:hover {
-    background-color: #e0e0e0;
-}
-
-.mediaDisplay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 80%;
-    overflow: hidden;
-    position: relative;
-}
-
-.logoContainer {
-    text-align: center;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    cursor: pointer;
-}
-
-.mediaImage {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.mediaName {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
-    margin-top: 8px;
-}
-
-.center {
-    transform: scale(1.2);
-    opacity: 1;
-    z-index: 3;
-}
-
-.near {
-    transform: scale(1);
-    opacity: 0.7;
-    z-index: 2;
-}
-
-.far {
-    transform: scale(0.8);
-    opacity: 0.4;
-    z-index: 1;
-}
-
-.hidden {
-    transform: scale(0.6);
-    opacity: 0.2;
-    z-index: 0;
-    pointer-events: none;
-}
-
-.carouselHeading {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    color: #2c3e50;
+    transition: background-color 0.3s ease;
   }
+  
+  .navButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .carouselContainer {
+      padding: 10px;
+    }
+  
+    .carouselHeading {
+      font-size: 2rem;
+    }
+  
+    .logoTrack {
+      width: 100%;
+      height: 250px;
+    }
+  
+    .mediaImage {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carouselHeading {
+      font-size: 1.5rem;
+    }
+  
+    .logoTrack {
+      height: 200px;
+    }
+  
+    .mediaImage {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .navButton {
+      width: 30px;
+      height: 30px;
+      font-size: 1rem;
+    }
+  }
+  

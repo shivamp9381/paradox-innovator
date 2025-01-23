@@ -7,6 +7,7 @@
   padding: 4rem 2rem;
   background: linear-gradient(to bottom, #f9f9f9, #ffffff);
   overflow: hidden;
+  flex-wrap: wrap; /* Ensures content doesn't overflow */
 }
 
 /* Content section */
@@ -19,6 +20,9 @@
 }
 
 .imageContainer {
+  position: relative;
+  height: 30rem;
+  width: auto;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -30,8 +34,9 @@
 
 /* Image styles */
 .aboutImage {
+  height: 100%;
   width: 100%;
-  max-width: 500px;
+  max-width: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -102,5 +107,55 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column; /* Stack content vertically */
+    gap: 1rem;
+  }
+
+  .content {
+    text-align: center; /* Center-align the text */
+    transform: translateX(0); /* Reset animation direction */
+    animation: fadeInUp 1.2s ease-out forwards; /* Optional: New fade-in animation */
+  }
+
+  .imageContainer {
+    height: 20rem; /* Adjust height for smaller screens */
+    transform: translateX(0); /* Reset animation direction */
+    animation: fadeInUp 1.2s ease-out forwards; /* Optional: New fade-in animation */
+  }
+
+  .aboutImage {
+    width: 90%; /* Shrink the image width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .heading {
+    font-size: 2rem; /* Adjust heading size */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+
+  .readMoreButton {
+    padding: 0.6rem 1.5rem; /* Adjust button size */
+    font-size: 0.9rem;
+  }
+}
+
+/* Optional animation for stacking effect */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

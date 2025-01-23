@@ -183,9 +183,11 @@
   }
   .navDropdown {
     position: relative;
+    cursor: pointer;
   }
   
   .dropdownMenu {
+    cursor: pointer;
     position: absolute;
     top: 100%;
     left: 0;
@@ -216,9 +218,30 @@
   }
   
   .mobileDropdown {
+    cursor: pointer;
     margin-left: 1rem;
     padding-left: 1rem;
     border-left: 2px solid var(--primary-color);
+  }
+  .dropdownIcon {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-primary);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .navDropdown:hover .dropdownIcon {
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+  
+  .mobileNavLink .dropdownIcon {
+    margin-left: 0.5rem;
+  }
+  
+  .mobileDropdown .dropdownIcon {
+    transform: rotate(180deg);
   }
   
   

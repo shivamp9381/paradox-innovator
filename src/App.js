@@ -18,6 +18,7 @@ import Mit from './Pages/MIT/Mit';
 import Yuva from './Pages/Yuva Shakti/yuva';
 import Prabhat from './Pages/Prabhat Khabar/prabhat';
 import Vishwamitra from './Pages/Dainik Vishwamitra/Vishwamitra';
+import VideoDisplay from './Pages/Projects/Earth Monitoring System/earth';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/yuvashakti" element={<Yuva />} />
           <Route path="/prabhat" element={<Prabhat />} />
           <Route path="/vishwamitra" element={<Vishwamitra />} />
+          <Route path="/earth" element={<VideoDisplay />} />
           {/* <Route path="/privacy" element={<Privacy />} /> */}
         </Routes>
       </div>
