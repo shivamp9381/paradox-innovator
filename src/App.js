@@ -10,6 +10,7 @@ import Swayam from './Pages/swayam';
 import Ranjan from './Pages/ranjan';
 import Shreya from './Pages/shreya';
 import PrivacyPolicy from './Pages/privacy';
+import SDGPage from './Pages/SDG/SDGPage';
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
           <Route path="/ranjan" element={<Ranjan />} />
           <Route path="/shreya" element={<Shreya />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/sdgpage" element={<SDGPage />} />
           {/* <Route path="/privacy" element={<Privacy />} /> */}
         </Routes>
       </div>

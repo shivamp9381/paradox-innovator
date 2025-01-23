@@ -44,7 +44,7 @@ const Hero = () => {
         <div className={styles.imageContainer}>
           <div className={styles.mainImageWrapper}>
             <img
-              src="https://i.ibb.co/72sNvrS/Whats-App-Image-2025-01-10-at-19-14-13.jpg"
+              src="https://i.ibb.co/KbxkByh/1.png"
               alt="AI Technology"
               className={styles.mainImage}
             />
@@ -58,10 +58,6 @@ const Hero = () => {
             />
           </div> */}
           
-          <div className={styles.badge}>
-            <div className={styles.badgeIcon}>✓</div>
-            <div className={styles.badgeText}>AI Powered</div>
-          </div>
         </div>
       </div>
 

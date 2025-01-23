@@ -6,6 +6,7 @@ import Hero from '../../Components/Hero/Hero'
 import ServicesComponent from '../../Components/ServiceComponent/servicecomponent'
 import AboutComponent from '../../Components/AboutComponent/aboutcomponent'
 import Reviews from '../../Components/Reviews/reviews'
+import SustainableGoals from '../../Components/SustainableGoals/SustainableGoals'
 
 const home = () => {
   return (
@@ -15,6 +16,7 @@ const home = () => {
       <ServicesComponent />
       <AboutComponent />
       <Reviews />
+      <SustainableGoals />
       <Footer />
     </div>
   )

@@ -39,7 +39,7 @@
   }
   
   .logo {
-    max-height: 50px;
+    max-height: 5rem;
     width: auto;
     object-fit: contain;
     transition: transform var(--transition-speed) ease-in-out;
@@ -181,6 +181,46 @@
     color: var(--primary-color);
     padding-left: 1.5rem;
   }
+  .navDropdown {
+    position: relative;
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    display: none;
+    z-index: 100;
+  }
+  
+  .dropdownOpen {
+    display: block;
+  }
+  
+  .dropdownItem {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color var(--transition-speed) ease;
+  }
+  
+  .dropdownItem:hover {
+    background: var(--primary-color);
+    color: #fff;
+  }
+  
+  .mobileDropdown {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--primary-color);
+  }
+  
   
   @keyframes slideIn {
     to {
