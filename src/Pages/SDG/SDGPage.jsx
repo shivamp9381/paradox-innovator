@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./SDGPage.module.css";
-import Hero from "../../Components/Hero/Hero";
 import Navbar from "../../Components/Navbar/navbar";
 import Footer from "../../Components/Footer/footer";
 
