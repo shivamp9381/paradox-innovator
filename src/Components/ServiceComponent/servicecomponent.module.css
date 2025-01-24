@@ -1,3 +1,10 @@
+/* Reset body and html for no overflow */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .servicesContainer {
   background-color: #f4f7f6;
   padding: 2rem;
@@ -17,6 +24,7 @@
   color: #2c3e50;
   line-height: 1.4;
   margin-bottom: 1rem;
+  
 }
 
 .servicesScrollContainer {
@@ -114,4 +122,142 @@
 
 .navButton:hover {
   transform: scale(1.05);
+}
+
+/* Base styles already provided in your original code */
+
+/* Responsive design with media queries */
+@media screen and (max-width: 1200px) {
+  .servicesContainer {
+    padding: 1.5rem;
+  }
+
+  .servicesInnerContainer {
+    gap: 15px;
+  }
+
+  .serviceCard {
+    flex: 0 0 260px; /* Slightly reduce card width */
+  }
+
+  .heading {
+    font-size: 2rem; /* Smaller font size for headings */
+  }
+
+  .subHeading {
+    font-size: 0.9rem; /* Smaller font size for subheadings */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .servicesContainer {
+    padding: 1rem;
+  }
+
+  .servicesInnerContainer {
+    padding: 1.5rem 0;
+    gap: 10px;
+  }
+
+  .serviceCard {
+    flex: 0 0 220px;
+    padding: 20px; /* Adjust padding to save space */
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .subHeading {
+    font-size: 0.8rem;
+  }
+
+  .exploreButton {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .servicesContainer {
+    padding: 1rem;
+  }
+
+  .servicesInnerContainer {
+    gap: 8px;
+  }
+
+  .serviceCard {
+    flex: 0 0 180px;
+    padding: 15px;
+    border-radius: 10px; /* Slightly smaller border radius */
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .subHeading {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .exploreButton {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .navButton {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .servicesContainer {
+    padding: 0.8rem; /* Reduce padding for a compact look */
+  }
+
+  .servicesInnerContainer {
+    gap: 5px;
+  }
+
+  .serviceCard {
+    flex: 0 0 150px; /* Smaller cards for small devices */
+    padding: 10px;
+    border-radius: 8px; /* Compact card design */
+  }
+
+  .heading {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .subHeading {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .serviceContent h3 {
+    font-size: 1rem;
+  }
+
+  .serviceContent p {
+    font-size: 0.8rem;
+    line-height: 1.4; /* Adjust line height for readability */
+  }
+
+  .exploreButton {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .navButton {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+  .navigationControls {
+    display: none;
+  }
 }
