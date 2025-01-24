@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import styles from "./servicecomponent.module.css";
 import { 
   FaRobot, FaDatabase, FaTools, 
@@ -55,25 +56,26 @@ const services = [
     icon: <FaCube />,
     color: "#FF8A5B",
     path: "/3d-design",
-  }
+  },
 ];
-
-function goServices(){
-  window.location.href = '/services';
-}
 
 const ServicesComponent = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const scrollRef = useRef(null);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleScroll = (direction) => {
     if (scrollRef.current) {
       const scrollAmount = 320;
       scrollRef.current.scrollBy({
-        left: direction === 'next' ? scrollAmount : -scrollAmount,
-        behavior: 'smooth'
+        left: direction === "next" ? scrollAmount : -scrollAmount,
+        behavior: "smooth",
       });
     }
+  };
+
+  const handleCardClick = (path) => {
+    navigate(path); // Navigate to the specified path
   };
 
   return (
@@ -84,24 +86,25 @@ const ServicesComponent = () => {
       </p>
 
       <div className={styles.servicesScrollContainer}>
-        <div 
-          ref={scrollRef} 
-          className={styles.servicesInnerContainer}
-        >
+        <div ref={scrollRef} className={styles.servicesInnerContainer}>
           {services.map((service, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className={`${styles.serviceCard} ${styles[`animateDelay${index % 5}`]}`}
-              style={{ 
+              style={{
                 borderLeftColor: service.color,
-                boxShadow: activeIndex === index 
-                  ? `0 10px 20px rgba(0,0,0,0.1), 0 0 15px ${service.color}50` 
-                  : 'none'
+                boxShadow:
+                  activeIndex === index
+                    ? `0 10px 20px rgba(0,0,0,0.1), 0 0 15px ${service.color}50`
+                    : "none",
               }}
-              onClick={() => setActiveIndex(index)}
+              onClick={() => {
+                setActiveIndex(index);
+                handleCardClick(service.path); // Call the redirection function
+              }}
             >
-              <div 
-                className={styles.serviceIcon} 
+              <div
+                className={styles.serviceIcon}
                 style={{ color: service.color }}
               >
                 {service.icon}
@@ -116,21 +119,17 @@ const ServicesComponent = () => {
       </div>
 
       <div className={styles.navigationControls}>
-        <button 
-          onClick={() => handleScroll('prev')}
-          className={styles.navButton}
-        >
+        <button onClick={() => handleScroll("prev")} className={styles.navButton}>
           ← Previous
         </button>
-        <button 
-          onClick={() => handleScroll('next')}
-          className={styles.navButton}
-        >
+        <button onClick={() => handleScroll("next")} className={styles.navButton}>
           Next →
         </button>
       </div>
 
-      <button onClick={goServices} className={styles.exploreButton}>Explore All Services</button>
+      <button onClick={() => navigate("/services")} className={styles.exploreButton}>
+        Explore All Services
+      </button>
     </div>
   );
 };

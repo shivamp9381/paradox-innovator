@@ -1,0 +1,80 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .focusAreas,
+  .technologies,
+  .whyChoose,
+  .process,
+  .contact {
+    margin-bottom: 40px;
+  }
+  
+  .subheading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .areaList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .area {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .area h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .area ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .area li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .technologies ul,
+  .whyChoose ul,
+  .process ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .technologies li,
+  .whyChoose li,
+  .process li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  

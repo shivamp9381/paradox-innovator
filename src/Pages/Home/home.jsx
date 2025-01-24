@@ -8,6 +8,7 @@ import AboutComponent from '../../Components/AboutComponent/aboutcomponent'
 import Reviews from '../../Components/Reviews/reviews'
 import SustainableGoals from '../../Components/SustainableGoals/SustainableGoals'
 import MediaCarousel from '../../Components/Media/media'
+import IndustryExperts from '../../Components/IndustryExperts/IndExperts'
 
 const home = () => {
   return (
@@ -16,6 +17,7 @@ const home = () => {
       <Hero />
       <ServicesComponent />
       <AboutComponent />
+      <IndustryExperts /> 
       <Reviews />
       <SustainableGoals />
       <MediaCarousel />
