@@ -1,0 +1,81 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .workshopOfferings,
+  .studentApproach,
+  .whyAttend,
+  .upcomingWorkshops,
+  .hostWorkshop,
+  .contact {
+    margin-bottom: 40px;
+  }
+  
+  .subheading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .workshopList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .workshop {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .workshop h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .workshop ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .workshop li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .studentApproach ul,
+  .whyAttend ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .studentApproach li,
+  .whyAttend li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .upcomingWorkshops p,
+  .hostWorkshop p,
+  .contact p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  

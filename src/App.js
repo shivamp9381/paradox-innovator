@@ -19,6 +19,13 @@ import Yuva from './Pages/Yuva Shakti/yuva';
 import Prabhat from './Pages/Prabhat Khabar/prabhat';
 import Vishwamitra from './Pages/Dainik Vishwamitra/Vishwamitra';
 import VideoDisplay from './Pages/Projects/Earth Monitoring System/earth';
+import UAVPage from './Components/ServiceComponent/IndivdualServices/UAV/UAVPage';
+import DDesignPage from './Components/ServiceComponent/IndivdualServices/3D_design/3D_design'; 
+import WorkshopPage from './Components/ServiceComponent/IndivdualServices/Workshop/WorkshopPage'; 
+import IOTPage from './Components/ServiceComponent/IndivdualServices/IOT/IOT'; 
+import LabSetupPage from './Components/ServiceComponent/IndivdualServices/Lab_setup/Lab_setup'; 
+import PCBPage from './Components/ServiceComponent/IndivdualServices/PCB/PCB'; 
+import RDPage from './Components/ServiceComponent/IndivdualServices/R_D/R_D'; 
 
 function App() {
   return (
@@ -35,18 +42,23 @@ function App() {
           <Route path="/ranjan" element={<Ranjan />} />
           <Route path="/shreya" element={<Shreya />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
-          <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/sdgpage" element={<SDGPage />} />
           <Route path="/kalinga" element={<Kalinga />} />
           <Route path="/yuva" element={<SDGPage />} />
           <Route path="/samagya" element={<Samagya />} />
-          <Route path="/sanmarg" element={<Sanmarg/>} />
+          <Route path="/sanmarg" element={<Sanmarg />} />
           <Route path="/mit" element={<Mit />} />
           <Route path="/yuvashakti" element={<Yuva />} />
           <Route path="/prabhat" element={<Prabhat />} />
           <Route path="/vishwamitra" element={<Vishwamitra />} />
           <Route path="/earth" element={<VideoDisplay />} />
-          {/* <Route path="/privacy" element={<Privacy />} /> */}
+          <Route path="/uav-design" element={<UAVPage />} />
+          <Route path="/3d-design" element={<DDesignPage />} /> 
+          <Route path="/iot-automation" element={<IOTPage />} /> 
+          <Route path="/research-development" element={<RDPage />} /> 
+          <Route path="/lab-setup" element={<LabSetupPage />} /> 
+          <Route path="/pcb-design" element={<PCBPage />} /> 
+          <Route path="/workshops" element={<WorkshopPage />} /> {/* Corrected the component name */}
         </Routes>
       </div>
     </Router>
