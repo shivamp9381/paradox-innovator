@@ -50,6 +50,7 @@ body, html {
   flex: 0 0 300px;
   background: white;
   border-radius: 15px;
+  max-height: 500px;
   border-left: 8px solid transparent;
   padding: 25px;
   transition: all 0.3s ease;
@@ -138,6 +139,7 @@ body, html {
 
   .serviceCard {
     flex: 0 0 260px; /* Slightly reduce card width */
+    max-height: 500px;
   }
 
   .heading {
@@ -161,6 +163,7 @@ body, html {
 
   .serviceCard {
     flex: 0 0 220px;
+    max-height: 500px;
     padding: 20px; /* Adjust padding to save space */
   }
 
