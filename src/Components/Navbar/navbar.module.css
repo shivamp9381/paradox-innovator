@@ -174,6 +174,7 @@ html {
 
 .mobileNavLink {
   padding: 1rem 0.5rem;
+  border: none;
 }
 
 body.menuOpen {
@@ -239,6 +240,7 @@ body.menuOpen {
 .mobileDropdown {
   cursor: pointer;
   margin-left: 1rem;
+  border: none;
   padding-left: 1rem;
   border-left: 2px solid var(--primary-color);
 }
