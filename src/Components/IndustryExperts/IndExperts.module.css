@@ -9,7 +9,7 @@
   text-align: center;
   margin-bottom: 40px;
   padding: 60px 20px;
-  background: linear-gradient(120deg, #2980b9, #6dd5fa);
+  background: linear-gradient(120deg,#0d6efd, #6dd5fa);
   border-radius: 8px;
   color: white;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
@@ -45,11 +45,15 @@
 }
 
 .expertsGrid {
-  display: grid;
+  display:flex;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 0 20px;
+  justify-items: center; /* Center grid items horizontally */
+  justify-content: center; /* Center the grid itself horizontally */
 }
+
+
 
 .expertCard {
   background-color: #ffffff;

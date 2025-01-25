@@ -31,6 +31,7 @@ import Samiul from './Components/IndustryExperts/IndividualExp/arpan/samiul/sami
 
 
 
+
 function App() {
   return (
     <Router>
@@ -65,6 +66,7 @@ function App() {
           <Route path="/workshops" element={<WorkshopPage />} /> {/* Corrected the component name */}
           <Route path="/arpan-baul" element={<Arpan />} />
           <Route path="/samiul-alam" element={<Samiul />} />
+
         </Routes>
       </div>
     </Router>
