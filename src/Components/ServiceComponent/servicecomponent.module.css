@@ -163,7 +163,8 @@ body, html {
 
   .serviceCard {
     flex: 0 0 220px;
-    max-height: 500px;
+    max-height: 630px;
+
     padding: 20px; /* Adjust padding to save space */
   }
 
@@ -193,6 +194,8 @@ body, html {
   .serviceCard {
     flex: 0 0 180px;
     padding: 15px;
+    max-height: 630px;
+    width: 14rem;
     border-radius: 10px; /* Slightly smaller border radius */
   }
 
