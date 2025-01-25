@@ -1,8 +1,12 @@
 import React from 'react';
 import styles from './R_D.module.css';
+import Navbar from '../../../Navbar/navbar';
+import Footer from '../../../Footer/footer';
 
 const RDPage = () => {
   return (
+    <div>
+      <Navbar />
     <div className={styles.container}>
       <section className={styles.intro}>
         <h1 className={styles.heading}>Innovative Research & Development (R&D)</h1>
@@ -89,6 +93,8 @@ const RDPage = () => {
         <h2 className={styles.subheading}>Get Involved with Paradox Innovator</h2>
         <p>Ready to innovate and bring your ideas to life? Whether you're a business looking to revolutionize your industry or a student working on your next big project, Paradox Innovator is here to support you.</p>
       </section>
+    </div>
+    <Footer />
     </div>
   );
 };

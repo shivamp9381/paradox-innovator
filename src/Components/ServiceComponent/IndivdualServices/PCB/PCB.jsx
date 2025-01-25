@@ -1,8 +1,12 @@
 import React from 'react';
 import styles from './PCB.module.css';
+import Footer from '../../../Footer/footer';
+import Navbar from '../../../Navbar/navbar';
 
 const PCBPage = () => {
   return (
+    <div>
+      <Navbar />
     <div className={styles.container}>
       <section className={styles.intro}>
         <h1 className={styles.heading}>PCB Designing Services</h1>
@@ -81,6 +85,8 @@ const PCBPage = () => {
         <h2 className={styles.subheading}>Get in Touch</h2>
         <p>If you're looking for professional PCB design services, get in touch with us to discuss your project needs.</p>
       </section>
+    </div>
+    <Footer />
     </div>
   );
 };

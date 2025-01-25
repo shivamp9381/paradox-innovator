@@ -124,6 +124,7 @@
   }
 
   .imageContainer {
+    width: auto;
     height: 20rem; /* Adjust height for smaller screens */
     transform: translateX(0); /* Reset animation direction */
     animation: fadeInUp 1.2s ease-out forwards; /* Optional: New fade-in animation */

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./earth.module.css";
-import Navbar from "../../../Components/Navbar/navbar";
+import Navbar from "../../Components/Navbar/navbar";
+import Footer from "../../Components/Footer/footer";
 
 const VideoDisplay = ({ videoSrc }) => {
   return (
@@ -18,6 +19,7 @@ const VideoDisplay = ({ videoSrc }) => {
           Your browser does not support the video tag.
         </video>
       </div>
+      <Footer />
     </div>
   );
 };

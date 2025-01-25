@@ -18,7 +18,7 @@ import Mit from './Pages/MIT/Mit';
 import Yuva from './Pages/Yuva Shakti/yuva';
 import Prabhat from './Pages/Prabhat Khabar/prabhat';
 import Vishwamitra from './Pages/Dainik Vishwamitra/Vishwamitra';
-import VideoDisplay from './Pages/Projects/Earth Monitoring System/earth';
+import VideoDisplay from './Pages/Video/earth.jsx';
 import UAVPage from './Components/ServiceComponent/IndivdualServices/UAV/UAVPage';
 import DDesignPage from './Components/ServiceComponent/IndivdualServices/3D_design/3D_design'; 
 import WorkshopPage from './Components/ServiceComponent/IndivdualServices/Workshop/WorkshopPage'; 

@@ -1,8 +1,12 @@
 import React from 'react';
 import styles from './IOT.module.css';
+import Navbar from '../../../Navbar/navbar';
+import Footer from '../../../Footer/footer';
 
 const IOTPage = () => {
   return (
+    <div>
+      <Navbar />
     <div className={styles.container}>
       <section className={styles.intro}>
         <h1 className={styles.heading}>IoT and Automation Services</h1>
@@ -89,6 +93,8 @@ const IOTPage = () => {
         <h2 className={styles.subheading}>Get in Touch</h2>
         <p>For inquiries, registrations, or collaborations, feel free to contact us!</p>
       </section>
+    </div>
+    <Footer />
     </div>
   );
 };

@@ -1,9 +1,13 @@
 // UAVPage.jsx
 import React from "react";
 import styles from "./UAVPage.module.css";
+import Navbar from "../../../Navbar/navbar";
+import Footer from "../../../Footer/footer";
 
 const UAVPage = () => {
   return (
+    <div>
+      <Navbar />
     <div className={styles.pageContainer}>
       <h1 className={styles.heading}>UAV Design & Manufacturing Services</h1>
       <p className={styles.intro}>
@@ -73,6 +77,8 @@ const UAVPage = () => {
           solutions.
         </p>
       </section>
+    </div>
+    <Footer />
     </div>
   );
 };

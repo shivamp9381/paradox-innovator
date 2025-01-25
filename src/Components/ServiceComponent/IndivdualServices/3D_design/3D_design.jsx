@@ -1,8 +1,12 @@
 import React from 'react';
 import styles from './3D_design.module.css'; // Corrected CSS file path
+import Footer from '../../../Footer/footer';
+import Navbar from '../../../Navbar/navbar';
 
 const DDesignPage = () => {
   return (
+    <div>
+      <Navbar />
     <div className={styles.container}>
       <section className={styles.intro}>
         <h1 className={styles.heading}>3D Design & Manufacturing</h1>
@@ -129,6 +133,8 @@ const DDesignPage = () => {
           Turn your ideas into reality with Paradox Innovator’s 3D Design & Manufacturing Services.
         </p>
       </section>
+    </div>
+    <Footer />
     </div>
   );
 };

@@ -29,26 +29,16 @@ const Navbar = () => {
     {
       name: 'Services',
       dropdown: [
-        'Home Automations',
-        'Research Projects',
-        'IoT and Automation',
-        'Workshops',
-        'Lab Setups',
-        'Custom College Projects',
-        '3D Design',
-        'Electronics',
-        'PCB Design',
+        { title: "UAV Design & Manufacturing Services", path: "/uav-design" },
+        { title: "PCB Designing Services", path: "/pcb-design" },
+        { title: "IoT and Automation Services", path: "/iot-automation" },
+        { title: "Innovative Research & Development (R&D)", path: "/research-development" },
+        { title: "Workshops", path: "/workshops" },
+        { title: "Lab Setup Services", path: "/lab-setup" },
+        { title: "3D Design & Manufacturing", path: "/3d-design" },
       ],
-      path: '/earth'
-
     },
-    { name: 'Blogs', path: '/blogs' ,       path: '/earth'
-    },
-    {
-      name: 'Projects',
-      dropdown: ['Earth Monitoring System', 'Project 2', 'Project 3', 'Project 4'],
-      path: '/earth'
-    },
+    { name: 'Blogs', path: '/blogs' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -71,7 +61,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className={styles.navLinks}>
-          {navItems.map((item, index) =>
+          {navItems.map((item) =>
             item.dropdown ? (
               <div
                 key={item.name}
@@ -89,8 +79,12 @@ const Navbar = () => {
                   }`}
                 >
                   {item.dropdown.map((subItem, subIndex) => (
-                    <a key={subIndex} href="#" className={styles.dropdownItem}>
-                      {subItem}
+                    <a
+                      key={subIndex}
+                      href={subItem.path}
+                      className={styles.dropdownItem}
+                    >
+                      {subItem.title}
                     </a>
                   ))}
                 </div>
@@ -120,7 +114,7 @@ const Navbar = () => {
           }`}
           aria-hidden={!isOpen}
         >
-          {navItems.map((item, index) =>
+          {navItems.map((item) =>
             item.dropdown ? (
               <div key={item.name}>
                 <button
@@ -135,11 +129,11 @@ const Navbar = () => {
                     {item.dropdown.map((subItem, subIndex) => (
                       <a
                         key={subIndex}
-                        href="#"
+                        href={subItem.path}
                         className={styles.mobileNavLink}
                         onClick={handleMobileNavClick}
                       >
-                        {subItem}
+                        {subItem.title}
                       </a>
                     ))}
                   </div>

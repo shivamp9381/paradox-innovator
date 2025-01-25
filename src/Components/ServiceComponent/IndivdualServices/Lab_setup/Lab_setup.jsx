@@ -1,8 +1,12 @@
 import React from 'react';
 import styles from './Lab_setup.module.css';
+import Navbar from '../../../Navbar/navbar';
+import Footer from '../../../Footer/footer';
 
 const LabSetupPage = () => {
   return (
+    <div>
+      <Navbar />
     <div className={styles.container}>
       <section className={styles.intro}>
         <h1 className={styles.heading}>Our Lab Setup Services</h1>
@@ -99,6 +103,8 @@ const LabSetupPage = () => {
         <h2 className={styles.subheading}>Get Started with Paradox Innovator</h2>
         <p>Transform your institution into a hub of innovation and practical learning. Contact us today to discuss your lab setup requirements.</p>
       </section>
+    </div>
+    <Footer />
     </div>
   );
 };

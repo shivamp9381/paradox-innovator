@@ -1,8 +1,12 @@
 import React from 'react';
 import styles from './WorkshopPage.module.css';
+import Navbar from '../../../Navbar/navbar';
+import Footer from '../../../Footer/footer';
 
 const WorkshopsPage = () => {
   return (
+    <div>
+      <Navbar />
     <div className={styles.container}>
       <section className={styles.intro}>
         <h1 className={styles.heading}>Workshops</h1>
@@ -107,6 +111,8 @@ const WorkshopsPage = () => {
         <h2 className={styles.subheading}>Get in Touch</h2>
         <p>For inquiries, registrations, or collaborations, feel free to contact us!</p>
       </section>
+    </div>
+    <Footer />
     </div>
   );
 };
