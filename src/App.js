@@ -26,8 +26,8 @@ import IOTPage from './Components/ServiceComponent/IndivdualServices/IOT/IOT';
 import LabSetupPage from './Components/ServiceComponent/IndivdualServices/Lab_setup/Lab_setup'; 
 import PCBPage from './Components/ServiceComponent/IndivdualServices/PCB/PCB'; 
 import RDPage from './Components/ServiceComponent/IndivdualServices/R_D/R_D';
-import Arpan from './Components/IndustryExperts/IndividualExp/arpan/arpan/arpan.jsx';
-import Samiul from './Components/IndustryExperts/IndividualExp/arpan/samiul/samiul.jsx';
+import Arpan from './Pages/IndividualExp/arpan/arpan.jsx'
+import Samiul from './Pages/IndividualExp/samiul/samiul.jsx'
 
 
 

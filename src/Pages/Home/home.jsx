@@ -9,6 +9,7 @@ import Reviews from '../../Components/Reviews/reviews'
 import SustainableGoals from '../../Components/SustainableGoals/SustainableGoals'
 import MediaCarousel from '../../Components/Media/media'
 import IndustryExperts from '../../Components/IndustryExperts/IndExperts'
+import SocialIcons from '../../Components/Social/Social'
 
 const home = () => {
   return (
@@ -21,6 +22,7 @@ const home = () => {
       <Reviews />
       <SustainableGoals />
       <MediaCarousel />
+      <SocialIcons />
       <Footer />
     </div>
   )
