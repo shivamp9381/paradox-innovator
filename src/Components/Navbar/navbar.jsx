@@ -40,6 +40,12 @@ const Navbar = () => {
     },
     { name: 'Blogs', path: '/blogs' },
     { name: 'Contact', path: '/contact' },
+    { 
+      name: 'Projects', 
+      dropdown:[
+        {title: "Earth Monitoring System, ", path: "/earth_monitoring/index.html" },
+      ]
+    },
   ];
 
   function goHome() {

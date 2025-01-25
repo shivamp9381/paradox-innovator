@@ -14,7 +14,7 @@ const About = () => {
     },
     {
       name: "Ranjan Kumar Gupta",
-      role: "Problem Solver | Mathematical Calculation | Hardware Enthusiast",
+      role: "Problem Solver | Mathematical Calculation | R&D Engineer",
       profileLink: "/ranjan",
       image: "https://i.ibb.co/qBVn2kB/Whats-App-Image-2025-01-10-at-19-14-13-1.jpg",
     },
@@ -32,7 +32,7 @@ const About = () => {
     },
     {
       name: "Anshu Raj",
-      role: "Founder | Hardware Engineer",
+      role: "Founder | R&D Engineer",
       profileLink: "/anshu",
       image: "https://i.ibb.co/GvzQX4H/Anshu-Raj.jpg",
     },

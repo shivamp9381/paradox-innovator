@@ -33,7 +33,7 @@ const Footer = () => {
         <div className={styles.brandSection}>
           <div className={styles.logoContainer}>
             <img
-              src="https://i.ibb.co/x3x4byM/logo-removebg-preview.png"
+              src="https://i.ibb.co/PhpPbZH/building-future-2-Photoroom.png"
               alt="Paradox Innovator"
               className={styles.logo}
             />
@@ -119,7 +119,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a 
-                    href="https://whttps://www.github.com/Paradox-Innovator-Group"
+                    href="https://www.github.com/Paradox-Innovator-Group"
                     className={styles.socialLink}
                   >
                     <span className={styles.icon}>    <FaGithub /> 
