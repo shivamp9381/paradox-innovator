@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./arpan.module.css";
-import Footer from "../../../../Footer/footer";
-import Navbar from "../../../../Navbar/navbar";
+import Navbar from "../../../Components/Navbar/navbar";
+import Footer from "../../../Components/Footer/footer";
 
 const Arpan = () => {
   return (

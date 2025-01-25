@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./media.module.css";
 
 const mediaLogos = [
@@ -13,7 +13,10 @@ const mediaLogos = [
 
 const MediaCarousel = () => {
   const [rotationAngle, setRotationAngle] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const rotationIntervalRef = useRef(null);
 
+  // Handle next and previous rotation manually
   const handleNext = () => {
     setRotationAngle((prevAngle) => prevAngle - 360 / mediaLogos.length);
   };
@@ -21,6 +24,21 @@ const MediaCarousel = () => {
   const handlePrev = () => {
     setRotationAngle((prevAngle) => prevAngle + 360 / mediaLogos.length);
   };
+
+  // Auto-rotate the carousel
+  useEffect(() => {
+    if (!isHovered) {
+      rotationIntervalRef.current = setInterval(handleNext, 3000); // Rotate every 3 seconds
+    } else {
+      clearInterval(rotationIntervalRef.current); // Stop rotation when hovered
+    }
+
+    return () => {
+      if (rotationIntervalRef.current) {
+        clearInterval(rotationIntervalRef.current); // Clean up interval on component unmount
+      }
+    };
+  }, [isHovered]); // Rerun the effect whenever hovering state changes
 
   return (
     <div className={styles.carouselContainer}>
@@ -39,6 +57,8 @@ const MediaCarousel = () => {
               transform: `rotateY(${(360 / mediaLogos.length) * index}deg) translateZ(400px)`
             }}
             onClick={() => window.open(logo.url, "_blank")}
+            onMouseEnter={() => setIsHovered(true)} // Pause rotation on hover
+            onMouseLeave={() => setIsHovered(false)} // Resume rotation after hover
           >
             <img src={logo.image} alt={logo.name} className={styles.mediaImage} />
             <p className={styles.mediaName}>{logo.name}</p>
