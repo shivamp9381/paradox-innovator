@@ -26,6 +26,8 @@ import IOTPage from './Components/ServiceComponent/IndivdualServices/IOT/IOT';
 import LabSetupPage from './Components/ServiceComponent/IndivdualServices/Lab_setup/Lab_setup'; 
 import PCBPage from './Components/ServiceComponent/IndivdualServices/PCB/PCB'; 
 import RDPage from './Components/ServiceComponent/IndivdualServices/R_D/R_D'; 
+import Arpan from './Components/IndustryExperts/Individual_IndExp/arpan/arpan';
+import Samiul from './Components/IndustryExperts/Individual_IndExp/samiul/samiul';
 
 function App() {
   return (
@@ -59,6 +61,8 @@ function App() {
           <Route path="/lab-setup" element={<LabSetupPage />} /> 
           <Route path="/pcb-design" element={<PCBPage />} /> 
           <Route path="/workshops" element={<WorkshopPage />} /> {/* Corrected the component name */}
+          <Route path="/arpan-baul" element={<Arpan />} /> 
+          <Route path="/samiul-alam" element={<Samiul />} /> 
         </Routes>
       </div>
     </Router>
