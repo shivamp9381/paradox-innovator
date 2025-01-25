@@ -4,11 +4,11 @@ import { FaWhatsapp, FaPhone } from 'react-icons/fa';
 
 const SocialIcons = () => {
   const handleWhatsappClick = () => {
-    window.open('https://wa.me/your-whatsapp-number', '_blank');
+    window.open('https://wa.me/7667492418', '_blank');
   };
 
   const handlePhoneClick = () => {
-    window.location.href = 'tel:your-phone-number';
+    window.location.href = 'tel:7667492418'; // Corrected string
   };
 
   return (
