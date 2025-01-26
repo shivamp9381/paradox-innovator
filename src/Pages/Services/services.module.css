@@ -123,3 +123,42 @@
 .navButton:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem; /* Reduced from 2.5rem for better mobile scaling */
+    line-height: 1.2; /* Added to improve readability */
+  }
+
+  .header p {
+    font-size: 0.9rem; /* Slightly smaller for compact mobile view */
+    line-height: 1.5; /* Improved readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem; /* Further reduced for very small screens */
+  }
+
+  .header p {
+    font-size: 0.8rem; /* Smaller text for extremely small screens */
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .header {
+    padding: 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+}

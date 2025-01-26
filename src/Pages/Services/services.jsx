@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef} from "react";
 import styles from "./services.module.css";
 import { 
   FaRobot, FaDatabase, FaTools, 
@@ -80,7 +80,6 @@ const Services = () => {
       <div className={styles.container}>
         <header className={styles.header}>
           <h1>Our Services</h1>
-          <p>Paradox Innovator - Pioneering Tomorrow's Technology, Today</p>
         </header>
 
         <div className={styles.servicesContainer}>
