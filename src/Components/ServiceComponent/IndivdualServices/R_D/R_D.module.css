@@ -1,82 +1,166 @@
 .container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .intro {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .heading {
-    padding-top: 9rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
 
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+
+.heading {
+  padding-top: 9rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: clamp(1rem, 3vw, 1.125rem);
+  line-height: 1.6;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.subheading {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.serviceList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.service {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+}
+
+.service h3 {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.service ul, 
+.industries ul, 
+.whyChoose ul, 
+.process ol, 
+.studentSupport ul, 
+.successStories ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.service ul li,
+.industries ul li, 
+.whyChoose ul li, 
+.process ol li, 
+.studentSupport ul li, 
+.successStories ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.service ul li::before,
+.industries ul li::before, 
+.whyChoose ul li::before, 
+.process ol li::before, 
+.studentSupport ul li::before, 
+.successStories ul li::before {
+  content: '•';
+  color: #3498db;
+  position: absolute;
+  left: 0;
+}
+
+.process ol {
+  counter-reset: process-counter;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.process ol li {
+  counter-increment: process-counter;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.process ol li::before {
+  content: counter(process-counter) '.';
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.contact {
+  text-align: center;
+  background-color: #3498db;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0.5rem;
   }
-  
-  .description {
-    font-size: 1.2rem;
-    color: #555;
+
+  .serviceList {
+    grid-template-columns: 1fr;
   }
-  
-  .focusAreas,
-  .technologies,
-  .whyChoose,
-  .process,
-  .contact {
-    margin-bottom: 40px;
-  }
-  
-  .subheading {
+
+  .heading {
     font-size: 2rem;
-    margin-bottom: 20px;
   }
-  
-  .areaList {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  
-  .area {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .area h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .area ul {
-    list-style-type: none;
-    padding-left: 20px;
-  }
-  
-  .area li {
+
+  .description {
     font-size: 1rem;
-    margin-bottom: 10px;
   }
-  
-  .technologies ul,
-  .whyChoose ul,
-  .process ul {
-    list-style-type: none;
-    padding-left: 20px;
+
+  .service {
+    padding: 1rem;
   }
-  
-  .technologies li,
-  .whyChoose li,
-  .process li {
-    font-size: 1rem;
-    margin-bottom: 10px;
+
+  .service h3 {
+    font-size: 1.1rem;
   }
-  
-  .contact p {
-    font-size: 1.2rem;
-    color: #555;
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    padding: 1rem 0;
   }
-  
+
+  .heading {
+    font-size: 1.75rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
