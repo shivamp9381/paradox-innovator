@@ -33,7 +33,7 @@ const AboutComponent = () => {
       </div>
       <div className={`${styles.imageContainer} ${styles.fadeInRight}`}>
         <img
-          src="https://ibb.co/FZG5F31.png"
+          src="https://ibb.co/FZG5F31"
           alt="About Us"
           className={`${styles.aboutImage} ${styles.imageZoom}`}
         />
