@@ -7,9 +7,12 @@ const RDPage = () => {
   return (
     <div>
       <Navbar />
-    <div className={styles.container}>
+    <div className={styles.pageContainer}>
+      {/* Hero Section */}
+        <section className={styles.hero}>
+          <h1 className={styles.title}>Innovative Research & Development</h1>
+        </section>
       <section className={styles.intro}>
-        <h1 className={styles.heading}>Innovative Research & Development (R&D)</h1>
         <p className={styles.description}>
           At Paradox Innovator, innovation drives everything we do. Our Research & Development (R&D) services are tailored to empower businesses, startups, and academic institutions to explore groundbreaking ideas, solve complex problems, and develop next-generation solutions.
           <br />
