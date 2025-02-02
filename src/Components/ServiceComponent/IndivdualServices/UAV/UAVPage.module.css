@@ -12,10 +12,11 @@
 }
 
 .heading {
+  text-align: center;
   padding-top: 9rem;
   font-size: clamp(2rem, 5vw, 2.5rem);
   font-weight: bold;
-  color: #333;
+  color: #2d6870;
   margin-bottom: 1rem;
 }
 
