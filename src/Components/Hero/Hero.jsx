@@ -32,9 +32,8 @@ const Hero = () => {
             <h2>
           towards new
             </h2>
-            <p></p>
-          <h1 className={styles.paraName}>
-          .:Synergies
+          <h1 className={styles.syn}>
+          . :Synergies
           </h1>
             <br></br>
              <h1 className={styles.paraName}>
