@@ -138,8 +138,8 @@ body, html {
   }
 
   .serviceCard {
-    flex: 0 0 200px; /* Slightly reduce card width */
-    max-height: 300px;
+    flex: 0 0 300px; /* Slightly reduce card width */
+    max-height: 400px;
   }
 
   .heading {
@@ -163,7 +163,7 @@ body, html {
 
   .serviceCard {
     flex: 0 0 220px;
-    max-height: 400px;
+    max-height: 500px;
 
     padding: 20px; /* Adjust padding to save space */
   }
