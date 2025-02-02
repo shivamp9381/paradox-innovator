@@ -20,7 +20,8 @@
   font-size: 3.5rem;
   font-weight: bold;
   animation: fadeIn 2s ease;
-  background: -webkit-linear-gradient(#0b307a, #65d9e6);
+/*   background: -webkit-linear-gradient(#0b307a, #65d9e6); */
+  color: #0c0463;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
