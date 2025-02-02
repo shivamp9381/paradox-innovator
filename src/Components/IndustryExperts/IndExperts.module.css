@@ -12,7 +12,7 @@
   padding: 60px 20px;
 /*   background: linear-gradient(120deg, #0d6efd, #6dd5fa); */
   color: white;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+/*   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); */
   border-radius: 8px;
 }
 
@@ -20,7 +20,7 @@
   font-size: 3.5rem;
   font-weight: bold;
   animation: fadeIn 2s ease;
-  background: -webkit-linear-gradient(#eee, #333);
+  background: -webkit-linear-gradient(#0b307a, #65d9e6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -201,6 +201,6 @@
   }
 
   .expertImage {
-    height: 200px;
+    height: 150px;
   }
 }
