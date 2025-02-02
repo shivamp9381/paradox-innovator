@@ -46,9 +46,10 @@ const About = () => {
         <section className={styles.hero}>
           <h1 className={styles.title}>About US</h1>
         </section>
-        <section className={styles.hero}>
+{/*         <section className={styles.hero}>
           <h1 className={styles.title}>Our History</h1>
-        </section>
+        </section> */}
+        <h2 className={styles.teamHeading}>Our History</h2>
 
         
         <section className={styles.team}>
@@ -72,7 +73,7 @@ const About = () => {
           </p>
           </section>
 
-        
+        <h2 className={styles.teamHeading}>Our Team</h2>
         <section className={styles.team}>
           <p className={styles.mainText}>
             We have a diverse team of passionate individuals who specialize in
