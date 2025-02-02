@@ -44,6 +44,10 @@
     opacity: 0;
     animation: fadeIn 0.6s ease-out forwards 0.3s;
   }
+.towards{
+     font-size: 3.5rem;
+    font-variant: small-caps;
+}
   .description {
     font-size: 1.1rem;
     line-height: 1.6;
