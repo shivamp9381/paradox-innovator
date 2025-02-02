@@ -1,9 +1,10 @@
 .container {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 1rem;
-  background-color: #f4f4f4;
-}
+    margin-top: 5rem;
+    font-family: "Arial", sans-serif;
+    color: #333;
+    padding: 20px;
+    background: linear-gradient(120deg, #f0f4f8, #ffffff);
+  }
 
 .hero {
     text-align: center;
