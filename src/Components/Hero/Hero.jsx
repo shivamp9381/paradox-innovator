@@ -29,11 +29,11 @@ const Hero = () => {
       <div className={styles.heroContainer}>
         {/* Text Content */}
         <div className={styles.contentContainer}>
-            <h2>
+            <h1 style="font-family:'Courier New'">
           towards new
-            </h2>
+            </h1>
           <h1 className={styles.syn}>
-          . :Synergies
+          .: Synergies
           </h1>
             <br></br>
              <h1 className={styles.paraName}>
