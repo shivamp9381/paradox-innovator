@@ -42,7 +42,7 @@ const MediaCarousel = () => {
 
   return (
     <div className={styles.carouselContainer}>
-      <h2 className={styles.carouselHeading}>In The Media</h2>
+      <h1 className={styles.carouselHeading}>In The Media</h1>
       <div
         className={styles.logoTrack}
         style={{
