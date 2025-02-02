@@ -192,7 +192,7 @@ body, html {
   }
 
   .serviceCard {
-    flex: 0 0 180px;
+    flex: 0 0 220px;
     padding: 15px;
     max-height: 630px;
     width: 14rem;
