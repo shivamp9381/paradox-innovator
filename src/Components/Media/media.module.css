@@ -12,10 +12,10 @@
   }
   
   .carouselHeading {
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    color: #676f7a;
+    color: #0c0463;
   }
   
   .logoTrack {
@@ -26,7 +26,7 @@
     align-items: center;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 1s ease-in-out;
   }
   
   .logoContainer {
