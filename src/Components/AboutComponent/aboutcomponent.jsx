@@ -35,7 +35,7 @@ const AboutComponent = () => {
         <img
           src="https://i.ibb.co/2VXvThr/Turn-Your.png"
           alt="About Us"
-          className={`${styles.aboutImage} ${styles.imageZoom}`}
+          className={`${styles.aboutImage}`}
         />
       </div>
     </div>
