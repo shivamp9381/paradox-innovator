@@ -35,7 +35,9 @@
 
 .syn{
     font-size: 3.5rem;
-    color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(91,91,185,1) 59%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
 /*     padding-top: 1rem; */
     font-weight: 700;
