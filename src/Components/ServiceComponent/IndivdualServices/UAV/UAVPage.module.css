@@ -5,6 +5,27 @@
   background-color: #f4f4f4;
 }
 
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 60px 20px;
+    background-image: url("https://i.ibb.co/7p2LrcR/6.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+  }
+  
+  .title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    animation: fadeIn 2s ease;
+  }
+
+
+
 .intro {
   text-align: center;
   margin-bottom: 2rem;
