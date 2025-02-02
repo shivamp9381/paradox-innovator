@@ -7,9 +7,13 @@ const DDesignPage = () => {
   return (
     <div>
       <Navbar />
+      <div className={styles.pageContainer}>
+        {/* Hero Section */}
+        <section className={styles.hero}>
+          <h1 className={styles.title}>UAV Design & Manufacturing Services</h1>
+        </section>
     <div className={styles.container}>
       <section className={styles.intro}>
-        <h1 className={styles.heading}>3D Design & Manufacturing</h1>
         <p className={styles.description}>
           At Paradox Innovator, we bring your ideas to life with our cutting-edge 3D Design and Manufacturing Services. From concept to creation, we offer a seamless process to transform your innovative ideas into tangible products. Whether you’re a student working on a project, a startup developing a prototype, or an industry professional in need of precision manufacturing, we’ve got you covered.
         </p>
