@@ -47,10 +47,10 @@ body, html {
 }
 
 .serviceCard {
-  flex: 0 0 300px;
+  flex: 0 0 200px;
   background: white;
   border-radius: 15px;
-  max-height: 500px;
+  max-height: 300px;
   border-left: 8px solid transparent;
   padding: 25px;
   transition: all 0.3s ease;
