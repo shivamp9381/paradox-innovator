@@ -29,8 +29,16 @@ const Hero = () => {
       <div className={styles.heroContainer}>
         {/* Text Content */}
         <div className={styles.contentContainer}>
+            <h2>
+          towards new
+            </h2>
+            <p></p>
           <h1 className={styles.paraName}>
-            PARADOX INNOVATOR
+          .:Synergies
+          </h1>
+            <br></br>
+             <h1 className={styles.paraName}>
+          Paradox Innovator
           </h1>
           
           <p className={styles.description}>
