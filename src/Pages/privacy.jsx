@@ -2,6 +2,11 @@ import React from 'react';
 
 const PrivacyPolicy = () => {
     return (
+        <div className={styles.container}>
+        {/* Hero Section */}
+        <section className={styles.hero}>
+          <h1 className={styles.title}>About US</h1>
+        </section>
         <div style={{ background: 'transparent' }}>
             <h1 style={{ fontFamily: 'Arial', fontSize: '26px', color: '#000000' }}>PRIVACY POLICY</h1>
             <div style={{ color: '#7F7F7F', fontSize: '15px' }}>
