@@ -29,7 +29,7 @@ const Hero = () => {
       <div className={styles.heroContainer}>
         {/* Text Content */}
         <div className={styles.contentContainer}>
-            <h1 style="font-family:'Courier New'">
+            <h1>
           towards new
             </h1>
           <h1 className={styles.syn}>
