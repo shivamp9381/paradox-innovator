@@ -11,7 +11,7 @@ const DDesignPage = () => {
     <div className={styles.pageContainer}>
       {/* Hero Section */}
         <section className={styles.hero}>
-          <h1 className={styles.title}>UAV Design & Manufacturing Services</h1>
+          <h1 className={styles.title}>3D Design & Manufacturing</h1>
         </section>
       <section className={styles.intro}>
         <p className={styles.description}>
