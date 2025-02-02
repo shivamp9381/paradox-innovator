@@ -28,10 +28,10 @@ const Hero = () => {
     <section className={styles.heroSection}>
       <div className={styles.heroContainer}>
         {/* Text Content */}
-        <div className={styles.contentContainer}>
-           <p style="font-family:'Courier New'"> <h1>
+        <div className={styles.contentContainer}> 
+            <h1 className={styles.towards}>
           towards new
-            </h1></p>
+            </h1>
           <h1 className={styles.syn}>
           .: Synergies
           </h1>
