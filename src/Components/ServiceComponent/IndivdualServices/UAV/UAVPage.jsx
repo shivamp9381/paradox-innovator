@@ -9,14 +9,15 @@ const UAVPage = () => {
     <div>
       <Navbar />
 
-      <div className={styles.container}>
+     
+
+      
+    <div className={styles.pageContainer}>
+       <div className={styles.container}>
         {/* Hero Section */}
         <section className={styles.hero}>
           <h1 className={styles.title}>UAV Design & Manufacturing Services</h1>
         </section>
-
-      
-    <div className={styles.pageContainer}>
 {/*       <h1 className={styles.heading}>UAV Design & Manufacturing Services</h1> */}
       <p className={styles.intro}>
         At Paradox Innovator, we specialize in delivering cutting-edge Unmanned
