@@ -13,7 +13,6 @@ const UAVPage = () => {
 
       
     <div className={styles.pageContainer}>
-       <div className={styles.container}>
         {/* Hero Section */}
         <section className={styles.hero}>
           <h1 className={styles.title}>UAV Design & Manufacturing Services</h1>
