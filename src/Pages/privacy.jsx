@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
     return (
          <div>
         < Navbar />
-        <div className={styles.container}>
+        <div className={styles.pageContainer}>
         {/* Hero Section */}
         <section className={styles.hero}>
           <h1 className={styles.title}>About US</h1>
