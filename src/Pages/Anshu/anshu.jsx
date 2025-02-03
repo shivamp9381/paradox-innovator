@@ -23,11 +23,11 @@ const Anshu = () => {
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>About Me</h2>
         <p className={styles.text}>
-          Hello, I am Anshu Raj, currently pursuing B.Tech at Heritage Institute
-          of Technology. My passion lies in creating and implementing innovative
-          ideas, with a strong focus on hardware creation.
+          Hello, I am Anshu Raj, a Robotics Enthusiasts. My passion lies in creating and implementing innovative
+          ideas, with a strong focus on hardware creation and Research and Development.
         </p>
         <p className={styles.text}>
+          With 4+ years of experience in Robotics and Electronics,
           I thrive on tackling complex challenges, bridging the gap between
           technical solutions and strategic business growth.
         </p>
@@ -38,11 +38,11 @@ const Anshu = () => {
         <h2 className={styles.sectionTitle}>Academic Background</h2>
         <ul className={styles.list}>
           <li>
-            <strong>B.Tech in AEIE</strong> - Heritage Institute of Technology,
-            Kolkata
+            <strong>Undergraduation</strong> -  Bachelor of Technology on Applied Electronics and Instrumentation Engineering from Heritage Institute of Technology,
+            Kolkata, West Bengal
           </li>
           <li>
-            <strong>Higher Secondary Education</strong> - Chinmaya Vidyalaya
+            <strong>Higher Secondary Education</strong> - Chinmaya Vidyalaya, Bokaro, Jharkhand
           </li>
         </ul>
       </section>
@@ -51,8 +51,12 @@ const Anshu = () => {
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Skills & Interests</h2>
         <ul className={styles.list}>
-          <li>Hardware Development</li>
-          <li>Innovative Problem Solving</li>
+          <li>💡Hardware Development</li>
+          <li>🎗️Innovative Problem Solving</li>
+          <li>⚙️Research and Development</li>
+          <li>💻Micro-Controller Expert</li>
+          <li>📀PCB Designer</li>
+          <li>📦3D Modelling</li>
         </ul>
       </section>
 

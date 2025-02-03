@@ -10,6 +10,7 @@ import SustainableGoals from '../../Components/SustainableGoals/SustainableGoals
 import MediaCarousel from '../../Components/Media/media'
 import IndustryExperts from '../../Components/IndustryExperts/IndExperts'
 import SocialIcons from '../../Components/Social/Social'
+import ConnectSection from '../../Components/contactsection/contactsection'
 
 const home = () => {
   return (
@@ -23,6 +24,7 @@ const home = () => {
       <SustainableGoals />
       <MediaCarousel />
       <SocialIcons />
+      <ConnectSection />
       <Footer />
     </div>
   )

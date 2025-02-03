@@ -1,11 +1,18 @@
 import React from 'react';
 import styles from './R_D.module.css';
+import Navbar from '../../../Navbar/navbar';
+import Footer from '../../../Footer/footer';
 
 const RDPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
+      <Navbar />
+    <div className={styles.pageContainer}>
+      {/* Hero Section */}
+        <section className={styles.hero}>
+          <h1 className={styles.title}>Innovative Research & Development</h1>
+        </section>
       <section className={styles.intro}>
-        <h1 className={styles.heading}>Innovative Research & Development (R&D)</h1>
         <p className={styles.description}>
           At Paradox Innovator, innovation drives everything we do. Our Research & Development (R&D) services are tailored to empower businesses, startups, and academic institutions to explore groundbreaking ideas, solve complex problems, and develop next-generation solutions.
           <br />
@@ -89,6 +96,8 @@ const RDPage = () => {
         <h2 className={styles.subheading}>Get Involved with Paradox Innovator</h2>
         <p>Ready to innovate and bring your ideas to life? Whether you're a business looking to revolutionize your industry or a student working on your next big project, Paradox Innovator is here to support you.</p>
       </section>
+    </div>
+    <Footer />
     </div>
   );
 };

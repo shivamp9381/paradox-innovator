@@ -1,11 +1,23 @@
 // UAVPage.jsx
 import React from "react";
 import styles from "./UAVPage.module.css";
+import Navbar from "../../../Navbar/navbar";
+import Footer from "../../../Footer/footer";
 
 const UAVPage = () => {
   return (
+    <div>
+      <Navbar />
+
+     
+
+      
     <div className={styles.pageContainer}>
-      <h1 className={styles.heading}>UAV Design & Manufacturing Services</h1>
+        {/* Hero Section */}
+        <section className={styles.hero}>
+          <h1 className={styles.title}>UAV Design & Manufacturing Services</h1>
+        </section>
+{/*       <h1 className={styles.heading}>UAV Design & Manufacturing Services</h1> */}
       <p className={styles.intro}>
         At Paradox Innovator, we specialize in delivering cutting-edge Unmanned
         Aerial Vehicle (UAV) design and manufacturing services. Whether you're
@@ -73,6 +85,8 @@ const UAVPage = () => {
           solutions.
         </p>
       </section>
+    </div>
+    <Footer />
     </div>
   );
 };
