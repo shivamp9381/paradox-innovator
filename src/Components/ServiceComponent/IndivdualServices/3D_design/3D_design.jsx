@@ -18,6 +18,13 @@ const DDesignPage = () => {
           At Paradox Innovator, we bring your ideas to life with our cutting-edge 3D Design and Manufacturing Services. From concept to creation, we offer a seamless process to transform your innovative ideas into tangible products. Whether you’re a student working on a project, a startup developing a prototype, or an industry professional in need of precision manufacturing, we’ve got you covered.
         </p>
       </section>
+      <div className={`${styles.imageContainer} ${styles.fadeInRight}`}>
+        <img
+          src="https://i.postimg.cc/wBdX99KK/kisspng-3d-printing-printer-computer-icons-3d-rendering-5af8ea81d76b91-9258339915262624018824.png"
+          alt="About Us"
+          className={`${styles.aboutImage}`}
+        />
+      </div>
 
       <section className={styles.services}>
         <h1 className={styles.subheading}><u>Our Services</u></h1>
