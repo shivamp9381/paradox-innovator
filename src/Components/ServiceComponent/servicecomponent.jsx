@@ -74,6 +74,7 @@ const ServicesComponent = () => {
     }
   };
 
+  
   const handleCardClick = (path) => {
     navigate(path); // Navigate to the specified path
   };
