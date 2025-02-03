@@ -28,7 +28,7 @@ const MediaCarousel = () => {
   // Auto-rotate the carousel
   useEffect(() => {
     if (!isHovered) {
-      rotationIntervalRef.current = setInterval(handleNext, 1000); // Rotate every 3 seconds
+      rotationIntervalRef.current = setInterval(handleNext, 3000); // Rotate every 3 seconds
     } else {
       clearInterval(rotationIntervalRef.current); // Stop rotation when hovered
     }
