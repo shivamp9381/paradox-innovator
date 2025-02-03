@@ -53,7 +53,7 @@
   padding: 2rem 0;
   gap: 20px;
   scrollbar-width: none;
-  -ms-overflow-style: none;
+  /* -ms-overflow-style: none; */
 }
 
 .servicesScrollContainer::-webkit-scrollbar {
