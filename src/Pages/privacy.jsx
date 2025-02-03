@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./Anshu/privacy.module.css";
+import styles from "./privacy.module.css";
 import Footer from "../Components/Footer/footer";
 import Navbar from "../Components/Navbar/navbar";
 const PrivacyPolicy = () => {
