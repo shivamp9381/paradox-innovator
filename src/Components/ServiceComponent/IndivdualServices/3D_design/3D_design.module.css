@@ -24,6 +24,18 @@
     font-weight: bold;
     animation: fadeIn 2s ease;
   }
+.imageContainer {
+  position: relative;
+  height: 30rem;
+  width: auto;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1.2s ease-out forwards;
+}
 
 
 .intro {
