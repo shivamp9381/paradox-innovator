@@ -1,8 +1,8 @@
 .sustainableGoalsSection {
     position: relative;
-    height: 80vh;
+    height: 60vh;
     width: auto;
-    background-image: url('https://i.ibb.co/pZcBzcZ/Sustainale.png');
+    background-image: url('https://i.ibb.co/4fTjh6J/Turn-Your-1.png');
     background-attachment: fixed; /* Parallax effect */
     background-position: center;
     background-size: cover;
@@ -12,7 +12,9 @@
     color: white;
     text-align: center;
   }
-  
+  .para{
+    font-size: 18px;
+  }
   .overlay {
     background: rgba(0, 0, 0, 0.6); /* Dark overlay */
     padding: 2rem;

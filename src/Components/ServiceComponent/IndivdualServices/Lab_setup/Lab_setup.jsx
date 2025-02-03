@@ -1,11 +1,18 @@
 import React from 'react';
 import styles from './Lab_setup.module.css';
+import Navbar from '../../../Navbar/navbar';
+import Footer from '../../../Footer/footer';
 
 const LabSetupPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
+      <Navbar />
+    <div className={styles.pageContainer}>
+      {/* Hero Section */}
+        <section className={styles.hero}>
+          <h1 className={styles.title}>Lab Setup Services</h1>
+        </section>
       <section className={styles.intro}>
-        <h1 className={styles.heading}>Our Lab Setup Services</h1>
         <p className={styles.description}>
           At Paradox Innovator, we provide comprehensive lab setup services for academic institutions to foster innovation and hands-on learning. Our labs are designed to empower students with the skills to work on cutting-edge technologies and develop real-world solutions. From IoT and automation to AI and renewable energy, we offer customized lab setups that align with your institution's vision and academic goals.
         </p>
@@ -99,6 +106,8 @@ const LabSetupPage = () => {
         <h2 className={styles.subheading}>Get Started with Paradox Innovator</h2>
         <p>Transform your institution into a hub of innovation and practical learning. Contact us today to discuss your lab setup requirements.</p>
       </section>
+    </div>
+    <Footer />
     </div>
   );
 };

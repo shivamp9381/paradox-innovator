@@ -1,11 +1,18 @@
 import React from 'react';
 import styles from './IOT.module.css';
+import Navbar from '../../../Navbar/navbar';
+import Footer from '../../../Footer/footer';
 
 const IOTPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
+      <Navbar />
+    <div className={styles.pageContainer}>
+        {/* Hero Section */}
+        <section className={styles.hero}>
+          <h1 className={styles.title}>IoT & Automation Services</h1>
+        </section>
       <section className={styles.intro}>
-        <h1 className={styles.heading}>IoT and Automation Services</h1>
         <p className={styles.description}>
           At Paradox Innovator, we specialize in delivering comprehensive IoT (Internet of Things) and Automation solutions that bridge the gap between innovation and efficiency. From smart home systems to industrial automation, our services are designed to help you unlock the true potential of connected devices and intelligent control systems.
           <br />
@@ -89,6 +96,8 @@ const IOTPage = () => {
         <h2 className={styles.subheading}>Get in Touch</h2>
         <p>For inquiries, registrations, or collaborations, feel free to contact us!</p>
       </section>
+    </div>
+    <Footer />
     </div>
   );
 };
