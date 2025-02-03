@@ -25,18 +25,12 @@ import WorkshopPage from './Components/ServiceComponent/IndivdualServices/Worksh
 import IOTPage from './Components/ServiceComponent/IndivdualServices/IOT/IOT'; 
 import LabSetupPage from './Components/ServiceComponent/IndivdualServices/Lab_setup/Lab_setup'; 
 import PCBPage from './Components/ServiceComponent/IndivdualServices/PCB/PCB'; 
-<<<<<<< HEAD
-import RDPage from './Components/ServiceComponent/IndivdualServices/R_D/R_D'; 
-import Arpan from './Components/IndustryExperts/Individual_IndExp/arpan/arpan';
-import Samiul from './Components/IndustryExperts/Individual_IndExp/samiul/samiul';
-=======
 import RDPage from './Components/ServiceComponent/IndivdualServices/R_D/R_D';
 import Arpan from './Pages/IndividualExp/arpan/arpan.jsx'
 import Samiul from './Pages/IndividualExp/samiul/samiul.jsx'
 
 
 
->>>>>>> 4a85eb2f826aeac4b7c0b02399def76a84bca939
 
 function App() {
   return (
@@ -70,14 +64,9 @@ function App() {
           <Route path="/lab-setup" element={<LabSetupPage />} /> 
           <Route path="/pcb-design" element={<PCBPage />} /> 
           <Route path="/workshops" element={<WorkshopPage />} /> {/* Corrected the component name */}
-<<<<<<< HEAD
-          <Route path="/arpan-baul" element={<Arpan />} /> 
-          <Route path="/samiul-alam" element={<Samiul />} /> 
-=======
           <Route path="/arpan-baul" element={<Arpan />} />
           <Route path="/samiul-alam" element={<Samiul />} />
 
->>>>>>> 4a85eb2f826aeac4b7c0b02399def76a84bca939
         </Routes>
       </div>
     </Router>

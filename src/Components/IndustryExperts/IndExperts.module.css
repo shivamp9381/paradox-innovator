@@ -4,108 +4,6 @@ body,html{
     overflow-x: hidden;
 }
 .container {
-<<<<<<< HEAD
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .hero {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .mainText,
-  .secondaryText {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
-  
-  .experts {
-    margin-top: 50px;
-  }
-  
-  .expertsHeading {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #222;
-    font-weight: 600;
-  }
-  
-  .expertsGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  .expertCard {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .expertCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-  }
-  
-  .expertImage {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-    border-radius: 12px;
-    transition: transform 0.3s;
-  }
-  
-  .expertCard:hover .expertImage {
-    transform: scale(1.05);
-  }
-  
-  .expertContent {
-    margin-top: 15px;
-    text-align: center;
-  }
-  
-  .expertName {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .expertRole {
-    font-size: 1rem;
-    color: #777;
-    margin-top: 8px;
-  }
-  
-  .hoverOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s;
-    border-radius: 12px;
-=======
   margin-top: 5rem;
   font-family: "Arial", sans-serif;
   color: #333;
@@ -243,70 +141,11 @@ body,html{
   from {
     transform: translateY(20px);
     opacity: 0;
->>>>>>> 4a85eb2f826aeac4b7c0b02399def76a84bca939
   }
   to {
     transform: translateY(0);
     opacity: 1;
   }
-<<<<<<< HEAD
-  
-  .profileLink {
-    font-size: 1.2rem;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    background-color: #1e90ff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-  }
-  
-  .profileLink:hover {
-    background-color: #0073e6;
-    text-decoration: none;
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 992px) {
-    .expertsGrid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .hero .title {
-      font-size: 2rem;
-    }
-  
-    .expertImage {
-      height: 180px;
-      object-fit: contain;
-    }
-  
-    .mainText,
-    .secondaryText {
-      font-size: 1rem;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .expertsGrid {
-      grid-template-columns: 1fr;
-    }
-  
-    .expertImage {
-      height: 160px;
-      object-fit: contain;
-    }
-  
-    .hero .title {
-      font-size: 1.8rem;
-    }
-  
-    .mainText,
-    .secondaryText {
-      font-size: 0.9rem;
-    }
-=======
 }
 
 @keyframes zoomIn {
@@ -317,7 +156,6 @@ body,html{
   to {
     transform: scale(1);
     opacity: 1;
->>>>>>> 4a85eb2f826aeac4b7c0b02399def76a84bca939
   }
 }
 
