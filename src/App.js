@@ -9,7 +9,7 @@ import Ankit from './Pages/ankit';
 import Swayam from './Pages/swayam';
 import Ranjan from './Pages/ranjan';
 import Shreya from './Pages/shreya';
-import PrivacyPolicy from './Pages/privacy';
+import PrivacyPolicy from './Pages/Privacy/privacy.jsx';
 import SDGPage from './Pages/SDG/SDGPage';
 import Kalinga from './Pages/Kalinga Chronicle/kalinga';
 import Samagya from './Pages/Samagya/samagya';

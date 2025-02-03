@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./privacy.module.css";
-import Footer from "../Components/Footer/footer";
-import Navbar from "../Components/Navbar/navbar";
+import Footer from "../../Components/Footer/footer";
+import Navbar from "../../Components/Navbar/navbar";
 const PrivacyPolicy = () => {
     return (
          <div>
@@ -41,7 +41,9 @@ const PrivacyPolicy = () => {
             {/* Additional content can be added here */}
             <Footer />
         </div>
-    );
+        </div>
+        </div>
+        );
 };
 
 export default PrivacyPolicy;
