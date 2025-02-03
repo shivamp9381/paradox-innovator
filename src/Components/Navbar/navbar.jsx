@@ -43,7 +43,7 @@ const Navbar = () => {
     { 
       name: 'Projects', 
       dropdown:[
-        {title: "Earth Monitoring System, ", path: "/earth_monitoring/index.html" },
+        {title: "Earthing Monitoring System ", path: "/earth_monitoring/index.html" },
       ]
     },
   ];

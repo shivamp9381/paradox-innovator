@@ -7,16 +7,19 @@ const DDesignPage = () => {
   return (
     <div>
       <Navbar />
-    <div className={styles.container}>
+        
+    <div className={styles.pageContainer}>
+      {/* Hero Section */}
+        <section className={styles.hero}>
+          <h1 className={styles.title}>3D Design & Manufacturing</h1>
+        </section>
       <section className={styles.intro}>
-        <h1 className={styles.heading}>3D Design & Manufacturing</h1>
         <p className={styles.description}>
           At Paradox Innovator, we bring your ideas to life with our cutting-edge 3D Design and Manufacturing Services. From concept to creation, we offer a seamless process to transform your innovative ideas into tangible products. Whether you’re a student working on a project, a startup developing a prototype, or an industry professional in need of precision manufacturing, we’ve got you covered.
         </p>
       </section>
-
       <section className={styles.services}>
-        <h2 className={styles.subheading}>Our Services</h2>
+        <h1 className={styles.subheading}><u>Our Services</u></h1>
         <div className={styles.serviceList}>
           <div className={styles.service}>
             <h3>3D Modeling & CAD Design</h3>
@@ -71,7 +74,7 @@ const DDesignPage = () => {
       </section>
 
       <section className={styles.industries}>
-        <h2 className={styles.subheading}>Industries We Serve</h2>
+        <h1 className={styles.subheading}><u>Industries We Serve</u></h1>
         <ul>
           <li>Education: Supporting students and educators in developing academic projects and prototypes.</li>
           <li>Healthcare: Designing custom prosthetics, implants, and medical devices.</li>
@@ -82,7 +85,7 @@ const DDesignPage = () => {
       </section>
 
       <section className={styles.whyChoose}>
-        <h2 className={styles.subheading}>Why Choose Paradox Innovator?</h2>
+        <h1 className={styles.subheading}><u>Why Choose Paradox Innovator?</u>></h1>
         <ul>
           <li>Expertise in Design: Decades of combined experience in 3D modeling and manufacturing.</li>
           <li>State-of-the-Art Equipment: Advanced 3D printers, CNC machines, and software for precision output.</li>
@@ -93,7 +96,7 @@ const DDesignPage = () => {
       </section>
 
       <section className={styles.process}>
-        <h2 className={styles.subheading}>Our Process</h2>
+        <h1 className={styles.subheading}><u>Our Process</u></h1>
         <ol>
           <li>Consultation: Understand your requirements, budget, and timeline.</li>
           <li>Design: Create detailed 3D models based on your inputs.</li>
@@ -104,7 +107,7 @@ const DDesignPage = () => {
       </section>
 
       <section className={styles.studentSupport}>
-        <h2 className={styles.subheading}>Student Support & Collaboration</h2>
+        <h1 className={styles.subheading}><u>Student Support & Collaboration</u></h1>
         <p>
           We take pride in assisting college students with:
           <ul>

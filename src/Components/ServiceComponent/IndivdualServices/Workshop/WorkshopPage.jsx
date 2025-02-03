@@ -7,9 +7,12 @@ const WorkshopsPage = () => {
   return (
     <div>
       <Navbar />
-    <div className={styles.container}>
+    <div className={styles.pageContainer}>
+      {/* Hero Section */}
+        <section className={styles.hero}>
+          <h1 className={styles.title}>Workshops</h1>
+        </section>
       <section className={styles.intro}>
-        <h1 className={styles.heading}>Workshops</h1>
         <p className={styles.description}>
           At Paradox Innovator, we believe in empowering individuals and teams with the knowledge and skills they need to excel in today’s rapidly evolving technological landscape. Our workshops are designed to provide hands-on learning experiences, combining theoretical knowledge with practical applications. Whether you’re an engineering student or a tech enthusiast, our workshops cater to diverse audiences, helping them explore cutting-edge technologies and foster innovation.
         </p>

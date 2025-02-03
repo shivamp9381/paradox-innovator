@@ -28,9 +28,15 @@ const Hero = () => {
     <section className={styles.heroSection}>
       <div className={styles.heroContainer}>
         {/* Text Content */}
-        <div className={styles.contentContainer}>
-          <h1 className={styles.paraName}>
-            PARADOX INNOVATOR
+        <div className={styles.contentContainer}> 
+            <h1 className={styles.towards}>
+          towards new
+            </h1>
+          <h1 className={styles.syn}>
+          .: Synergies
+          </h1>
+             <h1 className={styles.paraName}>
+          Paradox Innovator
           </h1>
           
           <p className={styles.description}>
@@ -56,7 +62,7 @@ const Hero = () => {
         <div className={styles.imageContainer}>
           <div className={styles.mainImageWrapper}>
             <img
-              src="https://i.ibb.co/KbxkByh/1.png"
+              src="https://i.postimg.cc/QCk1Wh8v/Call-center-pana.png"
               alt="AI Technology"
               className={styles.mainImage}
             />

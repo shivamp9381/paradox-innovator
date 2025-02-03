@@ -1,7 +1,16 @@
 import React from 'react';
-
+import styles from "./privacy.module.css";
+import Footer from "../Components/Footer/footer";
+import Navbar from "../Components/Navbar/navbar";
 const PrivacyPolicy = () => {
     return (
+         <div>
+        < Navbar />
+        <div className={styles.pageContainer}>
+        {/* Hero Section */}
+        <section className={styles.hero}>
+          <h1 className={styles.title}>About US</h1>
+        </section>
         <div style={{ background: 'transparent' }}>
             <h1 style={{ fontFamily: 'Arial', fontSize: '26px', color: '#000000' }}>PRIVACY POLICY</h1>
             <div style={{ color: '#7F7F7F', fontSize: '15px' }}>
@@ -30,6 +39,7 @@ const PrivacyPolicy = () => {
                 <a href="#toc" style={{ color: '#003AF1' }}><strong><em> table of contents</em></strong></a> below to find the section you are looking for.
             </p>
             {/* Additional content can be added here */}
+            <Footer />
         </div>
     );
 };

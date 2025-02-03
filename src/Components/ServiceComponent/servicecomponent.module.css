@@ -138,8 +138,8 @@ body, html {
   }
 
   .serviceCard {
-    flex: 0 0 260px; /* Slightly reduce card width */
-    max-height: 500px;
+    flex: 0 0 300px; /* Slightly reduce card width */
+    max-height: 400px;
   }
 
   .heading {
@@ -163,7 +163,7 @@ body, html {
 
   .serviceCard {
     flex: 0 0 220px;
-    max-height: 630px;
+    max-height: 600px;
 
     padding: 20px; /* Adjust padding to save space */
   }
@@ -192,7 +192,7 @@ body, html {
   }
 
   .serviceCard {
-    flex: 0 0 180px;
+    flex: 0 0 220px;
     padding: 15px;
     max-height: 630px;
     width: 14rem;
@@ -230,7 +230,7 @@ body, html {
   }
 
   .serviceCard {
-    flex: 0 0 150px; /* Smaller cards for small devices */
+    flex: 0 0 250px; /* Smaller cards for small devices */
     padding: 10px;
     border-radius: 8px; /* Compact card design */
   }

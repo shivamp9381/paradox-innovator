@@ -31,7 +31,7 @@ const services = [
   },
   {
     title: "Innovative Research & Development (R&D)",
-    description: "At Paradox Innovator, innovation drives everything we do. Our Research & Development (R&D) services are tailored to empower businesses, startups, and academic institutions to explore groundbreaking ideas, solve complex problems, and develop next-generation solutions.",
+    description: "Our Research & Development (R&D) services are tailored to explore groundbreaking ideas, solve complex problems, and develop next-generation solutions.",
     icon: <FaDatabase />,
     color: "#FDCB6E",
     path: "/research-development",
@@ -74,6 +74,7 @@ const ServicesComponent = () => {
     }
   };
 
+  
   const handleCardClick = (path) => {
     navigate(path); // Navigate to the specified path
   };
@@ -126,7 +127,6 @@ const ServicesComponent = () => {
           Next →
         </button>
       </div>
-
       <button onClick={() => navigate("/services")} className={styles.exploreButton}>
         Explore All Services
       </button>

@@ -7,9 +7,12 @@ const PCBPage = () => {
   return (
     <div>
       <Navbar />
-    <div className={styles.container}>
+      <div className={styles.pageContainer}>
+        {/* Hero Section */}
+        <section className={styles.hero}>
+          <h1 className={styles.title}>PCB Designing Services</h1>
+        </section>
       <section className={styles.intro}>
-        <h1 className={styles.heading}>PCB Designing Services</h1>
         <p className={styles.description}>
           At Paradox Innovator, we excel in delivering high-quality PCB design solutions tailored to meet the specific needs of industries, startups, and college students. From simple single-layer designs to complex multi-layered PCBs with intricate routing, our expertise ensures your electronic circuits are optimized for performance, cost, and manufacturability.
           <br />
