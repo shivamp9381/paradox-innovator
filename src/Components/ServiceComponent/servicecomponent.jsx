@@ -126,10 +126,11 @@ const ServicesComponent = () => {
           Next →
         </button>
       </div>
-
+      <div class="button-container">
       <button onClick={() => navigate("/services")} className={styles.exploreButton}>
         Explore All Services
       </button>
+        </div>
     </div>
   );
 };
