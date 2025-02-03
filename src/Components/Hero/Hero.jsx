@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Hero.module.css';
 
-function goAbout(){
-    window.location.href = '/about';
-}
 
 const Hero = () => {
   const [successRate, setSuccessRate] = useState(0);
