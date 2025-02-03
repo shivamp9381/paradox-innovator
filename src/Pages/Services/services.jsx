@@ -66,7 +66,7 @@ const Services = () => {
 
   const handleScroll = (direction) => {
     if (scrollRef.current) {
-      const scrollAmount = 320; // Width of service card + margin
+      const scrollAmount = 320; 
       scrollRef.current.scrollBy({
         left: direction === 'next' ? scrollAmount : -scrollAmount,
         behavior: 'smooth'
